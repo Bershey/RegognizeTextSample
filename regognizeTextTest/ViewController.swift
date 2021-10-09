@@ -37,8 +37,6 @@ class ViewController: UIViewController {
         } catch {
             print(error)
         }
-
-
     }
 
     @IBAction func cameraTapped(_ sender: UIBarButtonItem) {
@@ -52,13 +50,7 @@ class ViewController: UIViewController {
         imagePicker.allowsEditing = false
         self.present(imagePicker,animated: true,completion: nil)
     }
-    
-    private func startAnimating () {
-    }
-    
-    
 }
-
 
 extension ViewController :UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
